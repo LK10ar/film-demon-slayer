@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="logo-ciné-lk10.png">
+    
+    <title>Ciné LK10</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --jaune-cinema: #ffde00;
+            --noir-fond: #1a1a1a;
+            --gris-cadre: #2a2a2a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: var(--noir-fond);
+            color: var(--jaune-cinema);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-card {
+            background-color: var(--gris-cadre);
+            border: 4px solid var(--jaune-cinema);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 222, 0, 0.2);
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: clamp(1.2rem, 5vw, 2.2rem);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Correction du bug d'affichage mobile */
+        .video-responsive {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Ratio 16:9 */
+            background: #000;
+            border: 2px solid var(--jaune-cinema);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-responsive iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: none;
+        }
+
+        .spectacle-text {
+            color: #fff;
+            margin: 20px 0 10px 0;
+        }
+
+        .discord-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #5865F2;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .discord-link:hover {
+            background-color: #4752c4;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-card">
+        <h1>Demon Slayer - La Forteresse Infinie</h1>
+        
+        <div class="video-responsive">
+            <iframe src="https://short.icu/jSUVe1xxt" allowfullscreen></iframe>
+        </div>
+
+        <p class="spectacle-text">Profitez du spectacle !</p>
+        
+        <a href="https://lk10ar.github.io/invite-discord-lk10/" class="discord-link" target="_blank">
+            <i class="fab fa-discord"></i> Rejoindre Discord
+        </a>
+    </div>
+
+</body>
+</html>
